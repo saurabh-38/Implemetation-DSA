@@ -2,7 +2,8 @@
 /*
 Kruksal algorith is for mst 
 
-*/using namespace std;
+*/
+using namespace std;
 #define ll long long
 const ll nax=100;
 #define mp make_pair
@@ -50,7 +51,7 @@ return min_c;
 
 
 
-signed main(){
+int main(){
 
 ll t;
 cin>>t;
