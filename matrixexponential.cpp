@@ -48,16 +48,8 @@ cin>>n;
 //ll f[2][2]={{1 1},{1,0}};
 ll arr[2][2]={{1,1},{1,0}};
 
-if(n==1||n==2){cout<<"1"<<endl;
-
-continue;
-}
-if(n==3){
-	cout<<"2"<<endl;
-	continue;
-}
 //cout<<"1"<<endl;
-power_(arr,n-2);
+power_(arr,n);
 cout<<arr[0][0]+arr[0][1]<<endl;
 
 
