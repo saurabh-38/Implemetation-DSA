@@ -24,7 +24,7 @@ for(i=0;i<n;i++){
 sum=sum+arr[i];
 
 
-if(st[sum]!=0){
+if(st.find(sum)!=st.end()){
 
 	ll tr=i-st[sum];
 	if(tr>max_length){
