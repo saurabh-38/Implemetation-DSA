@@ -1,4 +1,6 @@
 //this code for finding maximum length of  subarray have  contain equal number of 0 and 1
+.//https://www.youtube.com/watch?v=1WugaISSWx8 
+	//watch this video
 
 #include<bits/stdc++.h>
 using namespace std;
