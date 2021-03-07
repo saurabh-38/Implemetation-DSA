@@ -1,3 +1,11 @@
+
+//this is code about to count the number of subarray of sum equal to k
+//just imagine a one sacle and number on scale 1,2,3, .....15
+//you want count number of subarray have sum equal to 5
+//we use to count subbarry sum
+//---------------------------------------
+//.................(s-k)...........s........
+
 #include<bits/stdc++.h>
 #define ll int
 const ll nax=1e9+7;
@@ -47,7 +55,7 @@ test{
 ll n,k;
 cin>>n>>k;
 vl arr;
-arr.resize(n+1);
+arr.resize(n+1);//this was array
 for(ll i=0;i<n;i++){
 	cin>>arr[i];
 }
