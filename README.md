@@ -1,5 +1,5 @@
 # My_codes
-#Hellow i just want implement DSA in simple way
+it my code in simple way
 
 it is a very important line for taking input from file
 
