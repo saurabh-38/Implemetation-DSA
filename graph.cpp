@@ -1,6 +1,7 @@
+
 struct graph{
 ll n,m;
-vector<vl> vt[tax];
+vector<vl> vt[1003];
 void inli(ll ni,ll mi){n=ni,m=mi;}
 void build(){
 	while(m--){
@@ -8,6 +9,7 @@ void build(){
 		cin>>x>>y;
 		x--,y--;
 		vt[x].pb(y);
+		vt[y].pb(x);
 }}
 
 void bfs(ll v){
