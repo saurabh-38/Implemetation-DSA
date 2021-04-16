@@ -43,28 +43,23 @@ ll n;
 // }
 
 
-void dijkstra()
-{	set<pair<ll,ll>>st;
+void dijkstra(ll src){
+	dis[src]=0;
+	set<pair<ll,ll>>st;
 		dist[1]=0;
 		for(int i=1;i<=n;i++)
 	       st.insert({dist[i],i});
-	
 	while(!st.empty())
 	{
 		ll u=st.begin()->second; st.erase(st.begin());
 		for(auto x: graph[u])
-		{
-			
-			ll v=x.first;
-			ll wt=x.second;
-			if(dist[u] + wt<dist[v])
-			{
-				st.erase({dist[v],v});// remove this , no use of it
+		{ll v=x.first;
+		ll wt=x.second;
+		if(dist[u] + wt<dist[v])
+		{	st.erase({dist[v],v});// remove this , no use of it
 				dist[v]=dist[u]+wt; // update the minimum distance
 				st.insert({dist[v],v});
-			}
-		}
-	}
+	}}}
 for(ll i=1;i<=n;i++)cout<<dist[i]<<"  ";
 
 }
@@ -80,8 +75,9 @@ for(ll i=0;i<e;i++){
 	cin>>a>>b>>w;
 graph[a].pb({b,w});
 graph[b].pb({a,w});}
-
-dijkstra();
+ll src;
+	cin>>src;
+dijkstra(src);
 
 
 
